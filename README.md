@@ -5,13 +5,13 @@ As a traveler, I want to see the weather outlook for multiple cities so that I c
 Pseudocode: 
 
 [x] get api key
-[ ] create repo
-[ ] add index.html, style.css, script.js
+[x] create repo
+[x] add index.html, style.css, script.js
 [ ] HTML has: 
-	[ ] header "weather dashboard"
-	[ ] navigation bar: search box and most recent searches
-	[ ] results div for city name and date, temp, wind, humidity, uv index
-	[ ] results div for 5 day forecast, date, temp, wind, humidity
+	[x] header "weather dashboard"
+	[x] navigation bar: search box and most recent searches
+	[x] results div for city name and date, temp, wind, humidity, uv index
+	[x] results div for 5 day forecast, date, temp, wind, humidity
 	[ ] footer with credits
 	
 [ ] CSS has: 
