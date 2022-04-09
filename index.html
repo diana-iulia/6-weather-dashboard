@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Weather Forecast</title>
+
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+
+    <body>
+
+        <header>Your Weather Dashboard</header>
+        
+        <!-- Navigation (search box and 5 previous searches) -->
+        <nav>
+            <!-- City Search Box and Submit Button -->
+            <form>
+                <label for="searchedCity">Where ya goin? </label>
+                <input type="text" id="searchedCity" name="searchedCity" placeholder="city name here">
+                <input type="submit" value="get weather">
+            </form>
+            <!-- empty div for search history -->
+            <div id="searchHistory"> </div>
+        </nav>
+        
+        <!-- Current weather div -->
+        <div id="currentWeather">
+            <!-- unordered list for temp, wind, hum, UV -->
+            <ul> </ul>
+        </div>
+
+        <!-- 5 day forecast div -->
+        <div id="fiveDayWeather"> 
+            <!-- unordered list for emoji, temp, wind, hum -->
+            <ul> </ul>
+        </div>
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
