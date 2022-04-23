@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- responsive viewport meta tag to ensure proper rendering and touch zooming for all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- appears in browser tab -->
         <title>Weather Forecast</title>
@@ -15,36 +17,41 @@
 
     <body>
 
-        <header>Your Weather Dashboard</header>
+        <header class="h1 container-fluid text-center">Your Weather Dashboard</header>
 
-        <!-- Navigation (search box and 5 previous searches) -->
-        <nav>
-            <!-- City Search Box and Submit Button -->
-            <form>
-                <label for="searchedCity">Where ya goin? </label>
-                <input type="text" id="searchedCity" name="searchedCity" placeholder="city">
-                <input type="submit" value="get weather">
-            </form>
-            <!-- empty div for search history -->
-            <div id="searchHistory"> </div>
-        </nav>
-        
-        <main>
-            <!-- Current weather div -->
-            <div id="currentWeather">
-                <!-- unordered list for temp, wind, hum, UV -->
-                <ul> </ul>
-            </div>
+        <div class="container">
+            <!-- Navigation (search box and 5 previous searches) -->
+            <nav class="nav col-2">
+                <!-- City Search Box and Submit Button -->
+                <form>
+                    <label for="searchedCity">Where ya goin?</label>
+                    <input type="text" id="searchedCity" name="searchedCity" placeholder="city">
+                    <input type="submit" class="btn btn-outline-info" onclick="geoData()" value="get weather">
+                </form>
+                <br>
+                <!-- empty div for search history -->
+                <div id="searchHistory" class="nav flex-column"> </div>
+            </nav>
+            
+            <main class="col-10">
+                <!-- Current weather div -->
+                <div id="currentWeather">
+                    <!-- unordered list for temp, wind, hum, UV -->
+                    <ul> </ul>
+                </div>
 
-            <!-- 5 day forecast div -->
-            <div id="fiveDayWeather"> 
-                <!-- unordered list for emoji, temp, wind, hum -->
-                <ul> </ul>
-            </div>
-        </main>
+                <!-- 5 day forecast div -->
+                <div id="fiveDayWeather"> 
+                    <!-- unordered list for emoji, temp, wind, hum -->
+                    <ul> </ul>
+                </div>
+            </main>
 
-        <footer> Made with love and tears by  <a href="https://github.com/dianaiuliacalin"> 💙dianaiulia💙 </a></footer>
+        </div>
+
+        <!-- <footer> Made with love and tears by <a href="https://github.com/dianaiuliacalin"> 💙dianaiulia💙 </a></footer> -->
 
         <script src="./assets/script.js"></script>
+        <script src="https://momentjs.com/downloads/moment.js"></script>
     </body>
 </html>
