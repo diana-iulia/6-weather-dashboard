@@ -12,7 +12,7 @@ Pseudocode:
 	[x] navigation bar: search box and most recent searches
 	[x] results div for city name and date, temp, wind, humidity, uv index
 	[x] results div for 5 day forecast, date, temp, wind, humidity
-	[ ] footer with credits
+	[x] footer with credits
 	
 [ ] CSS has: 
 	[ ] header - blue
