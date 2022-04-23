@@ -13,6 +13,8 @@ Pseudocode:
 	[x] results div for city name and date, temp, wind, humidity, uv index
 	[x] results div for 5 day forecast, date, temp, wind, humidity
 	[x] footer with credits
+    [x] link bootstrap CDN 
+    [x] link custom css
 	
 [ ] CSS has: 
 	[ ] header - blue
@@ -22,8 +24,8 @@ Pseudocode:
 	[ ] localstorage for most recent searches 
 	[ ] if, else :sunny: :umbrella: :cloud: :partly_sunny: :snowflake:
 	[ ] variables for:
-		[ ] api key 
-		[ ] searchedCity
+		[x] api key 
+		[ ] searchedCityEl
 		[ ] searchHistory - get history
 		[ ] let history = JSON.parse(localStorage.getItem("search-history")) || [];
 		

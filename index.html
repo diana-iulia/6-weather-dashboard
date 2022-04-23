@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <!-- appears in browser tab -->
         <title>Weather Forecast</title>
 
+        <!-- link bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+        <!-- link custom stylesheet -->
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
 
@@ -18,26 +22,28 @@
             <!-- City Search Box and Submit Button -->
             <form>
                 <label for="searchedCity">Where ya goin? </label>
-                <input type="text" id="searchedCity" name="searchedCity" placeholder="city name here">
+                <input type="text" id="searchedCity" name="searchedCity" placeholder="city">
                 <input type="submit" value="get weather">
             </form>
             <!-- empty div for search history -->
             <div id="searchHistory"> </div>
         </nav>
         
-        <!-- Current weather div -->
-        <div id="currentWeather">
-            <!-- unordered list for temp, wind, hum, UV -->
-            <ul> </ul>
-        </div>
+        <main>
+            <!-- Current weather div -->
+            <div id="currentWeather">
+                <!-- unordered list for temp, wind, hum, UV -->
+                <ul> </ul>
+            </div>
 
-        <!-- 5 day forecast div -->
-        <div id="fiveDayWeather"> 
-            <!-- unordered list for emoji, temp, wind, hum -->
-            <ul> </ul>
-        </div>
+            <!-- 5 day forecast div -->
+            <div id="fiveDayWeather"> 
+                <!-- unordered list for emoji, temp, wind, hum -->
+                <ul> </ul>
+            </div>
+        </main>
 
-        <footer> Made with love and tears by 💙dianaiulia💙 also,<a href="https://github.com/dianaiuliacalin"> here's my github </a></footer>
+        <footer> Made with love and tears by  <a href="https://github.com/dianaiuliacalin"> 💙dianaiulia💙 </a></footer>
 
         <script src="./assets/script.js"></script>
     </body>
