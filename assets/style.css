@@ -2,8 +2,9 @@ body {
     background-color: aquamarine;
 }
 
-.custom-fill {
+header, .btn {
     background-color: navy;
+    color: white;
 }
 
 footer {

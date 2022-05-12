@@ -21,19 +21,19 @@
 
         <div class="container">
             <!-- Navigation (search box and 5 previous searches) -->
-            <nav class="nav col-2">
+            <nav class="nav col-3">
                 <!-- City Search Box and Submit Button -->
-                <form>
+                <form id="searchedCityEl">
                     <label for="searchedCity">Where ya goin?</label>
                     <input type="text" id="searchedCity" name="searchedCity" placeholder="city">
-                    <input type="submit" class="btn btn-outline-info custom-fill" onclick="geoData()" value="get weather">
+                    <input type="submit" id="searchButton" class="btn btn-outline-info" onclick="getWeather()" value="get weather">
                 </form>
                 <br>
                 <!-- empty div for search history -->
                 <div id="searchHistory" class="nav flex-column"> </div>
             </nav>
             
-            <main class="col-10">
+            <main class="col-9">
                 <!-- Current weather div -->
                 <div id="currentWeather">
                     <!-- unordered list for temp, wind, hum, UV -->
